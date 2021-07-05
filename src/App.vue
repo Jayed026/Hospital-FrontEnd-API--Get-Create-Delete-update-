@@ -1,21 +1,24 @@
+/* eslint-disable vue/valid-template-root */
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <CreatePost />
+
+    <PostList />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+//import axios from "axios";
+import PostList from "./components/PostList.vue";
+import CreatePost from "./components/CreatePost.vue";
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    CreatePost,
+    PostList,
+  },
+};
 </script>
-
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
